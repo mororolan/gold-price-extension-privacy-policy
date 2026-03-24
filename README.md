@@ -1,0 +1,1 @@
+# gold-price-extension-privacy-policy
