@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私权政策 - 实时金价监控</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.8;
+      color: #333;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      padding: 40px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+      border-bottom: 2px solid #FFD700;
+    }
+    .logo {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      color: #1a1a2e;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      color: #666;
+      font-size: 16px;
+    }
+    .update-date {
+      background: #f8f9fa;
+      padding: 10px 20px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #666;
+    }
+    h2 {
+      color: #1a1a2e;
+      font-size: 20px;
+      margin: 30px 0 15px;
+      padding-left: 15px;
+      border-left: 4px solid #FFD700;
+    }
+    p {
+      margin-bottom: 15px;
+      color: #555;
+    }
+    ul {
+      margin: 15px 0;
+      padding-left: 25px;
+    }
+    li {
+      margin-bottom: 8px;
+      color: #555;
+    }
+    .highlight-box {
+      background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
+      border: 1px solid #FFD700;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .highlight-box h3 {
+      color: #856404;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    .highlight-box p {
+      color: #856404;
+      margin-bottom: 0;
+    }
+    .api-list {
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 15px 20px;
+      margin: 15px 0;
+    }
+    .api-list li {
+      font-family: monospace;
+      font-size: 14px;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid #eee;
+      text-align: center;
+      color: #999;
+      font-size: 14px;
+    }
+    .contact {
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .contact a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 25px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">🏆</div>
+      <h1>实时金价监控</h1>
+      <p class="subtitle">Chrome 扩展程序隐私权政策</p>
+      <div class="update-date">📅 最后更新日期：2024年3月</div>
+    </div>
+
+    <h2>1. 概述</h2>
+    <p>"实时金价监控"是一款 Chrome 浏览器扩展程序，用于实时显示国际黄金价格（伦敦金、纽约金、沪金）。我们非常重视用户隐私，本政策说明我们如何处理您的数据。</p>
+
+    <div class="highlight-box">
+      <h3>🔒 核心承诺</h3>
+      <p>本扩展程序<strong>不收集、不存储、不传输</strong>任何用户个人信息。您的隐私安全是我们的首要原则。</p>
+    </div>
+
+    <h2>2. 数据收集</h2>
+    <p>本扩展程序<strong>不收集</strong>任何个人身份信息，包括但不限于：</p>
+    <ul>
+      <li>姓名、电子邮件地址、电话号码</li>
+      <li>浏览历史记录</li>
+      <li>搜索查询内容</li>
+      <li>地理位置信息</li>
+      <li>设备标识符</li>
+      <li>IP 地址</li>
+    </ul>
+
+    <h2>3. 本地存储</h2>
+    <p>扩展程序仅在您的本地设备上存储以下数据：</p>
+    <ul>
+      <li><strong>价格提醒设置</strong>：您设定的金价提醒阈值（如：伦敦金升至3100美元时提醒）</li>
+      <li><strong>金价缓存</strong>：最近获取的金价数据，用于快速显示</li>
+    </ul>
+    <p>这些数据使用 Chrome 的 <code>storage.local</code> API 存储，仅保存在您的设备上，<strong>不会上传到任何服务器</strong>。</p>
+
+    <h2>4. 网络请求</h2>
+    <p>扩展程序会访问以下第三方金融数据服务获取实时金价：</p>
+    <div class="api-list">
+      <ul>
+        <li>新浪财经 (hq.sinajs.cn)</li>
+        <li>东方财富 (push2.eastmoney.com)</li>
+      </ul>
+    </div>
+    <p>这些请求<strong>仅用于获取公开的金融市场数据</strong>，不包含任何用户个人信息，不会追踪您的浏览行为。</p>
+
+    <h2>5. 第三方服务</h2>
+    <p>本扩展程序：</p>
+    <ul>
+      <li>❌ 不使用任何分析工具（如 Google Analytics）</li>
+      <li>❌ 不使用任何广告服务</li>
+      <li>❌ 不使用任何用户追踪服务</li>
+      <li>❌ 不与任何第三方共享数据</li>
+    </ul>
+
+    <h2>6. 权限说明</h2>
+    <p>本扩展程序请求以下权限，用途如下：</p>
+    <ul>
+      <li><strong>alarms</strong>：定时刷新金价数据（每30秒）</li>
+      <li><strong>storage</strong>：在本地存储您的提醒设置</li>
+      <li><strong>notifications</strong>：当金价触发您设定的阈值时发送桌面通知</li>
+      <li><strong>主机权限</strong>：访问金融数据API获取实时金价</li>
+    </ul>
+
+    <h2>7. 数据安全</h2>
+    <p>所有用户数据仅存储在本地设备上，受 Chrome 浏览器的安全机制保护。我们不运营任何服务器，因此不存在数据泄露的风险。</p>
+
+    <h2>8. 儿童隐私</h2>
+    <p>本扩展程序不针对13岁以下儿童设计，不会故意收集儿童的个人信息。</p>
+
+    <h2>9. 政策变更</h2>
+    <p>如果我们更新本隐私政策，将在此页面发布更新内容，并更新"最后更新日期"。建议您定期查看本页面。</p>
+
+    <h2>10. 联系我们</h2>
+    <p>如果您对本隐私政策有任何疑问或建议，欢迎通过以下方式联系我们：</p>
+    <div class="contact">
+      <p>📧 电子邮件：<a href="mailto:robinlan@pku.edu.cn">robinlan@pku.edu.cn</a></p>
+    </div>
+
+    <div class="footer">
+      <p>© 2024 实时金价监控 | 保留所有权利</p>
+      <p style="margin-top:10px;">感谢您使用我们的扩展程序 🙏</p>
+    </div>
+  </div>
+</body>
+</html>
